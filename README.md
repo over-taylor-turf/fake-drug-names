@@ -2,8 +2,8 @@
 
 ## Project Links 
 
-- [GitHub Repo](https://git.generalassemb.ly/tayloroverturf/project-2-react)
-- [add your deployment link -- TBD]() ❌
+- [GitHub Repo: Fake Drug Names](https://git.generalassemb.ly/tayloroverturf/fake-drug-names)
+- [TBD deployment link]() ❌
 
 ## Project Description ✅
 

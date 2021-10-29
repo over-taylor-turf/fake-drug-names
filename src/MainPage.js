@@ -3,17 +3,24 @@ import {prefixdata, middledata, suffixdata} from './dataset';
 
 function MainPage() {
 
+
       // Random Number Generators
       const randomNumber100 = Math.floor(Math.random() * 99) + 1
       const randomNumberPrefix = Math.floor(Math.random() * 19) + 1
       const randomNumberMiddle = Math.floor(Math.random() * 19) + 1
       const randomNumberSuffix = Math.floor(Math.random() * 19) + 1
 
-      // Random Drug Name
-      let randomDrugName = prefixdata[randomNumberPrefix] + middledata[randomNumberMiddle] + suffixdata[randomNumberSuffix]
 
       // Use State
-        const [drugEffects, setDrugEffects] = useState();
+      const [drugEffects, setDrugEffects] = useState();
+      const [drugName, setDrugName] = useState();
+      
+
+      // Random Drug Name
+      const handleRandomDrugNames = () => {
+        setDrugName(prefixdata[randomNumberPrefix] + middledata[randomNumberMiddle] + suffixdata[randomNumberSuffix]);
+        makeAPICall(drugName);
+      }
       
       // API Call
         const makeAPICall = () => (
@@ -22,10 +29,10 @@ function MainPage() {
           .then((results) => setDrugEffects(results.data[randomNumber100].title)) )
     
       // Use Effect
-        useEffect(() => {
-          makeAPICall();
-          }, [])
-
+        // useEffect(() => {
+        //   makeAPICall();
+        //   }, [])
+      
 
 
     return (
@@ -35,15 +42,13 @@ function MainPage() {
 
         <p>Introducing...</p>
         <p className="random-drug-name">
-            {randomDrugName}
+            {drugName ? drugName : '...'}
         </p>
-        <button>Generate Random Drug Name 💊</button>
+        <button className="most-important-button" onClick={() => {handleRandomDrugNames()}} >Generate Random Drug Name 💊</button>
 
         <p>Drug Details:</p>
-        <p className="random-drug-facts">RANDOM DRUG NAME is a {drugEffects ? drugEffects.toLowerCase('') : ''} and side effects may include vomiting, diarrhea, internal bleeding or death.</p>
-        <button>Routes to Disclaimer Page</button>
-
-        <p>Testing: </p>
+        <p className="random-drug-facts">{drugEffects ? `${drugName} is a ${drugEffects.toLowerCase('')}` : '...'}</p>
+        <a href=''>Route to Disclaimer Page</a>
       </>
     );
   }

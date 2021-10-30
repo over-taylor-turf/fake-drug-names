@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import {prefixdata, middledata, suffixdata} from './dataset';
+import sideeffects from './sideeffects';
 
 function MainPage() {
 
 
-      // Random Number Generators
+      // Random Number Variables
       const randomNumber100 = Math.floor(Math.random() * 99) + 1
       const randomNumberPrefix = Math.floor(Math.random() * 19) + 1
       const randomNumberMiddle = Math.floor(Math.random() * 19) + 1
       const randomNumberSuffix = Math.floor(Math.random() * 19) + 1
+      const randomNumberSideEffect1 = Math.floor(Math.random() * 70) + 1
+      const randomNumberSideEffect2 = Math.floor(Math.random() * 70) + 1
+      const randomNumberSideEffect3 = Math.floor(Math.random() * 70) + 1
+      const randomNumberSideEffect4 = Math.floor(Math.random() * 70) + 1
 
 
       // Use State
@@ -47,7 +52,7 @@ function MainPage() {
         <button className="most-important-button" onClick={() => {handleRandomDrugNames()}} >Generate Random Drug Name 💊</button>
 
         <p>Drug Details:</p>
-        <p className="random-drug-facts">{drugEffects ? `${drugName} is a ${drugEffects.toLowerCase('')}` : '...'}</p>
+        <p className="random-drug-facts">{drugEffects ? `${drugName} is a ${drugEffects.toLowerCase('')} with side effects including ${sideeffects[randomNumberSideEffect1]}, ${sideeffects[randomNumberSideEffect2]}, ${sideeffects[randomNumberSideEffect3]}, and ${sideeffects[randomNumberSideEffect4]}.` : '...'}</p>
         <a href=''>Route to Disclaimer Page</a>
       </>
     );

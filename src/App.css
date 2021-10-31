@@ -1,17 +1,171 @@
-.App {
+/* COLOR PALETTE */
+
+/* 
+Primary:
+    Pink: #E367BD
+    Robin's Egg Blue: #82D0FF
+    Orange: #FEA959
+    Yellow: #F5E061
+
+Secondary: 
+  Mint Green: #5DB09C
+  Off-White: #F3F7F8
+  Brightest Pink: #FD3DC4
+  Light Blue: #C1DCE4
+  Golden Yellow: #FBD53E
+  Tan: #DCAD79
+*/
+
+
+/* T I T L E   P A G E */
+
+#title {
   text-align: center;
-  margin: 5px;
-  color: gray;
+  margin-top: 10px; /* I think this is causing the problem */
+  font-size: 4em;
+  color: #388A80;
+  font-family: 'MuseoModerno', cursive;
+  padding-bottom: 0px;
+  margin-bottom: 0px; 
+  -webkit-transform:scale(1,1.35); /* Safari and Chrome */
+    -moz-transform:scale(1,1.35); /* Firefox */
+    -ms-transform:scale(1,1.35); /* IE 9 */
+    -o-transform:scale(1,1.35); /* Opera */
+    transform:scale(1,1.35); /* W3C */
+  -webkit-text-stroke: 0.3px #165141;
+  -webkit-text-fill-color: #388A80;
 }
 
-.random-drug-facts {
-  font-family: 'Courier New', Courier, monospace;
-  color: black;
+#tagline {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 20px; 
+  font-size: 1.5em;
+  line-height: 125%;
+  color: #F3F7F8;
+  padding-top: 0px;
+  margin-top: 0px; 
+}
+
+#learn-more {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 20px; 
+  margin-bottom: 20px;
+  color: #F3F7F8;
+  text-decoration: none;
+  background-color: #388A80;
+  padding: 8px;
+  border-radius: 25px;
+  position: fixed;
+  bottom: 0;
+  border: 1.5px solid #165141;
+}
+
+#learn-more:hover {
+  background-color: #F3F7F8;
+  color: #165141;
+  border: 1.5px solid #165141;
+}
+
+.pink-image {
+  background-image: url('pinkpills.jpg');
+  background-color: #E367BD;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+
+/*  A B O U T  P A G E  */
+
+.about-image {
+  background-image: url('assortedpills.jpg');
+  background-color: #E367BD;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.about-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 1.25em;
+  text-align: left;
+  color: #206DB1;
+  margin: 15px;
+  padding: 5px;
+  background-color: rgb(193, 220, 228, 0.45);
+  border-radius: 15px;
+}
+
+.generate-a-name:hover {
+  background-color: #206DB1;
+  border: 1.5px solid #C1DCE4;
+  color: #C1DCE4;
+}
+
+.generate-a-name {
+font-family: 'Manrope', sans-serif;
+font-weight: 600;
+text-align: left;
+margin-left: 20px; 
+margin-bottom: 20px;
+color: #206DB1;
+text-decoration: none;
+background-color: #C1DCE4;
+padding: 8px;
+border-radius: 25px;
+position: fixed;
+bottom: 0;
+border: 1.5px solid #206DB1;
+}
+
+
+/*  M A I N  P A G E  */
+
+.blue-image {
+  background-image: url('bluepills.jpg');
+  background-color: #82D0FF;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
 }
 
 .random-drug-name {
-  font-family: 'Courier New', Courier, monospace;
-  color: black;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
   font-size: 3em;
-  font-weight: 600;
+  text-align: center;
+}
+
+.random-drug-facts {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+}
+
+.most-important-button {
+  border: 1px solid #F98B98;
+  background-color: #FECECF; 
+  color: #F98B98;
+  padding: 8px;
+  border-radius: 25px;
+}
+
+.button-container {
+  margin: 0;
+  position: absolute;
+  align-items: center;
+}
+
+.drug-details {
+  position: fixed;
+  bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }

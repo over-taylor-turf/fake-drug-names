@@ -7,7 +7,7 @@ const sideeffects = [
     "unpleasant mouth taste", 
     "somnolence", 
     "respiratory infections", 
-    "dizziness",,
+    "dizziness",
     "dry mouth",
     "anxiety", 
     "hallucinations", 

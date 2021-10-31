@@ -1,12 +1,12 @@
 import React from 'react'; 
+import { Link } from "react-router-dom";
 
 function About() {
     return (
-      <>
-        <h1>Prescription Drug Name Generator</h1>
-        <p><strong>Text Explaining Concept</strong>: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis purus. Tempor commodo ullamcorper a lacus vestibulum sed arcu.</p>
-        <button>Routes to Main Page</button>
-      </>
+      <div className="about-image">
+        <p className="about-text">Welcome to <em>Medpramin</em>. We take the thinking out of the prescription drug naming process. <br/><br/><em>Medpramin</em> is a painless name generator for the newest pharmaceutical solutions hitting the market.</p>
+        <Link className="generate-a-name" to='/names'>Generate a Name</Link>
+      </div>
     );
   }
   

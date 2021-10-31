@@ -41,20 +41,17 @@ function MainPage() {
 
 
     return (
-      <>
-        <h3>Here are the Main Page Components! ⬇️</h3>
-        <img src="https://media.istockphoto.com/vectors/pill-bottle-vector-id1220328285?k=20&m=1220328285&s=612x612&w=0&h=8D6QBNOvTHQ5ulVq34YgDDGfEPzbvFIYGYWdgAdIcqo=" alt='pill bottle' style={{height: "100px"}}/>
-
+      <div className="blue-image">
         <p>Introducing...</p>
         <p className="random-drug-name">
             {drugName ? drugName : '...'}
         </p>
-        <button className="most-important-button" onClick={() => {handleRandomDrugNames()}} >Generate Random Drug Name 💊</button>
+        <div className="button-container"><button className="most-important-button" onClick={() => {handleRandomDrugNames()}} >Generate Name</button></div>
 
-        <p>Drug Details:</p>
-        <p className="random-drug-facts">{drugEffects ? `${drugName} is a ${drugEffects.toLowerCase('')} with side effects including ${sideeffects[randomNumberSideEffect1]}, ${sideeffects[randomNumberSideEffect2]}, ${sideeffects[randomNumberSideEffect3]}, and ${sideeffects[randomNumberSideEffect4]}.` : '...'}</p>
-        <a href=''>Route to Disclaimer Page</a>
-      </>
+        <div className="drug-details">
+        <h3>Drug Details:</h3>
+        <p className="random-drug-facts">{drugEffects ? `${drugName} is a ${drugEffects.toLowerCase('')} with side effects including ${sideeffects[randomNumberSideEffect1]}, ${sideeffects[randomNumberSideEffect2]}, ${sideeffects[randomNumberSideEffect3]}, and ${sideeffects[randomNumberSideEffect4]}.` : '...'}</p></div>
+      </div>
     );
   }
   

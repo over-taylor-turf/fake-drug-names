@@ -5,10 +5,12 @@ function About() {
     return (
       <div className="pink-image">
         <h1 id="title">medpramin</h1>
-        <p id="tagline">A Painless <br/>Prescription <br/>Drug Name <br/>Generator</p>
+        <p id="tagline">A Painless Prescription Drug Name Generator</p>
         <Link id="learn-more" to='/about'>Learn More</Link>
       </div>
     );
   }
   
   export default About;
+
+  // <i class="fas fa-prescription-bottle"></i>

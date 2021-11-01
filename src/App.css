@@ -9,7 +9,7 @@ Primary:
 
 Secondary: 
   Mint Green: #5DB09C
-  Off-White: #F3F7F8
+  Greyish-White: #F3F7F8
   Brightest Pink: #FD3DC4
   Light Blue: #C1DCE4
   Golden Yellow: #FBD53E
@@ -17,155 +17,212 @@ Secondary:
 */
 
 
-/* T I T L E   P A G E */
+/* ! ! !       T I T L E   P A G E   S T Y L E S       ! ! ! */
 
-#title {
-  text-align: center;
-  margin-top: 10px; /* I think this is causing the problem */
-  font-size: 4em;
-  color: #388A80;
-  font-family: 'MuseoModerno', cursive;
-  padding-bottom: 0px;
-  margin-bottom: 0px; 
-  -webkit-transform:scale(1,1.35); /* Safari and Chrome */
-    -moz-transform:scale(1,1.35); /* Firefox */
-    -ms-transform:scale(1,1.35); /* IE 9 */
-    -o-transform:scale(1,1.35); /* Opera */
-    transform:scale(1,1.35); /* W3C */
-  -webkit-text-stroke: 0.3px #165141;
-  -webkit-text-fill-color: #388A80;
-}
-
-#tagline {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 600;
-  text-align: left;
-  margin-left: 20px; 
-  font-size: 1.5em;
-  line-height: 125%;
-  color: #F3F7F8;
-  padding-top: 0px;
-  margin-top: 0px; 
-}
-
-#learn-more {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 600;
-  text-align: left;
-  margin-left: 20px; 
-  margin-bottom: 20px;
-  color: #F3F7F8;
-  text-decoration: none;
-  background-color: #388A80;
-  padding: 8px;
-  border-radius: 25px;
-  position: fixed;
-  bottom: 0;
-  border: 1.5px solid #165141;
-}
-
-#learn-more:hover {
-  background-color: #F3F7F8;
-  color: #165141;
-  border: 1.5px solid #165141;
-}
-
-.pink-image {
-  background-image: url('pinkpills.jpg');
-  background-color: #E367BD;
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-}
+/* Title: "Medpramin" */
+      #title {
+        text-align: center;
+        font-size: 4em;
+        margin-top: 0;
+        padding-top: 10px;
+        color: #388A80;
+        font-family: 'MuseoModerno', cursive;
+        padding-bottom: 0px;
+        margin-bottom: 0px; 
+        -webkit-transform:scale(1,1.35); /* Safari and Chrome */
+          -moz-transform:scale(1,1.35); /* Firefox */
+          -ms-transform:scale(1,1.35); /* IE 9 */
+          -o-transform:scale(1,1.35); /* Opera */
+          transform:scale(1,1.35); /* W3C */
+        -webkit-text-stroke: 0.3px #165141;
+        -webkit-text-fill-color: #388A80;
+      }
 
 
-/*  A B O U T  P A G E  */
+/* Text: "A Painless Prescription Drug Name Generator" */
+      #tagline {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 600;
+        text-align: left;
+        margin-left: 20px; 
+        font-size: 1.5em;
+        line-height: 125%;
+        color: #F3F7F8;
+        padding-top: 0px;
+        margin-top: 0px; 
+        width: 35vw;
+      }
 
-.about-image {
-  background-image: url('assortedpills.jpg');
-  background-color: #E367BD;
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-}
+/* Button: "Learn More" */
+      #learn-more {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 600;
+        text-align: left;
+        margin-left: 20px; 
+        margin-bottom: 20px;
+        color: #F3F7F8;
+        text-decoration: none;
+        background-color: #388A80;
+        padding: 8px;
+        border-radius: 25px;
+        position: fixed;
+        bottom: 0;
+        border: 1.5px solid #165141;
+      }
 
-.about-text {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 600;
-  font-size: 1.25em;
-  text-align: left;
-  color: #206DB1;
-  margin: 15px;
-  padding: 5px;
-  background-color: rgb(193, 220, 228, 0.45);
-  border-radius: 15px;
-}
+      #learn-more:hover {
+        background-color: #F3F7F8;
+        color: #165141;
+        border: 1.5px solid #165141;
+      }
 
-.generate-a-name:hover {
-  background-color: #206DB1;
-  border: 1.5px solid #C1DCE4;
-  color: #C1DCE4;
-}
-
-.generate-a-name {
-font-family: 'Manrope', sans-serif;
-font-weight: 600;
-text-align: left;
-margin-left: 20px; 
-margin-bottom: 20px;
-color: #206DB1;
-text-decoration: none;
-background-color: #C1DCE4;
-padding: 8px;
-border-radius: 25px;
-position: fixed;
-bottom: 0;
-border: 1.5px solid #206DB1;
-}
+/* Image: Pink Background */
+      .pink-image {
+        background-image: url('pinkpills.jpg');
+        background-color: #E367BD;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+      }
 
 
-/*  M A I N  P A G E  */
 
-.blue-image {
-  background-image: url('bluepills.jpg');
-  background-color: #82D0FF;
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-}
 
-.random-drug-name {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 700;
-  font-size: 3em;
-  text-align: center;
-}
+/* ! ! !       A B O U T  P A G E   S T Y L E S       ! ! ! */
 
-.random-drug-facts {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 500;
-}
+/* Image: Pink Background */
+      .about-image {
+        background-image: url('assortedpills.jpg');
+        background-color: #F3F7F8;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+      }
 
-.most-important-button {
-  border: 1px solid #F98B98;
-  background-color: #FECECF; 
-  color: #F98B98;
-  padding: 8px;
-  border-radius: 25px;
-}
+/* Text: "Medpramin is a solutions-based... " */
+      .about-text {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 600;
+        font-size: 1.35em;
+        text-align: left;
+        color: #174e80;
+        margin: 0px 15px 15px 15px;
+        padding: 15px 5px 5px 5px;
+        background-color: rgb(193, 220, 228, 0.45);
+        border-radius: 15px;
+      }
 
-.button-container {
-  margin: 0;
-  position: absolute;
-  align-items: center;
-}
+      .about-text a {
+        color: #174e80;
+      }
 
-.drug-details {
-  position: fixed;
-  bottom: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
+      .about-text a:hover {
+        color: #DCAD79;
+      }
+
+
+/* Button: "Generate a Name" */
+      .generate-a-name {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 600;
+        text-align: left;
+        margin-left: 20px; 
+        margin-bottom: 20px;
+        color: #174e80;
+        text-decoration: none;
+        background-color: #C1DCE4;
+        padding: 8px;
+        border-radius: 25px;
+        position: fixed;
+        bottom: 0;
+        border: 1.5px solid #206DB1;
+      }
+
+      .generate-a-name:hover {
+        background-color: #206DB1;
+        border: 1.5px solid #C1DCE4;
+        color: #C1DCE4;
+      }
+
+
+
+
+
+/* ! ! !       M A I N  P A G E  S T Y L E S       ! ! ! */
+
+/* Image: Blue Background */
+      .blue-image {
+        background-image: url('bluepills.jpg');
+        background-color: #82D0FF;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+      }
+
+/* Text: "Introducing..." */
+      #introducing {
+        color: #FFFCFA;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 500;
+        font-size: 1.2em;
+        margin: 0px 0px 0px 5px;
+      }
+
+/* Title: Randomized Drug Name */
+      .random-drug-name {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 700;
+        font-size: 2.75em;
+        text-align: center;
+        color: #FFFCFA;
+        background-color: rgb(255, 252, 250, 0.2);
+      }
+
+/* Text: Randomized Drug Facts */
+      .random-drug-facts {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 500;
+      }
+
+
+/* Button: "Generate Name" */
+      .most-important-button {
+        border: 1px solid #F98B98;
+        background-color: #FECECF; 
+        color: #F98B98;
+        padding: 8px;
+        border-radius: 25px;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 700;
+        font-size: 1.25em;
+      }
+
+      .button-container {
+        margin: 0;
+        position: absolute;
+        left: 5%;
+      }
+
+
+/* Text: Example Drug Facts */
+      .drug-details {
+        position: fixed;
+        bottom: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        color: #FFFCFA;
+        background-color: rgb(255, 252, 250, 0.2);
+        height: 35vh;
+        text-overflow: clip;
+      }
+
+      .drug-details p {
+        padding-left: 10px;
+      }
+
+      .drug-details h3 {
+        padding: 10px;
+      }

@@ -20,7 +20,7 @@ const sideeffects = [
     "hernia", 
     "malaise", 
     "neck rigidity",
-    "photosensitivity.",
+    "photosensitivity",
     "agitation",
     "hypesthesia", 
     "vertigo",

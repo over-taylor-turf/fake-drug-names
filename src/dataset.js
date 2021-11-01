@@ -19,7 +19,21 @@ export const prefixdata = [
     "Allop",
     "Arith",
     "Los",
-    "Met"
+    "Met",
+    "Ri",
+    "My",
+    "Lo",
+    "Am",
+    "Amp",
+    "Amb",
+    "Me",
+    "Tri",
+    "Al",
+    "A",
+    "Re",
+    "Ve",
+    "Mi",
+    "De"
 ]
 
 export const middledata = [
@@ -48,7 +62,14 @@ export const middledata = [
     "fu", 
     "bi", 
     "pi", 
-    "hi", 
+    "hi",
+    "be",
+    "by",
+    "fo",
+    "fa",
+    "fi",
+    "vi",
+    "pa" 
 ]
 
 export const suffixdata = [
@@ -61,11 +82,10 @@ export const suffixdata = [
     "rol", 
     "zole", 
     "tan", 
-    "zartan", 
+    "zartan",
     "phen",
     "done", 
     "pram", 
-    "tus", 
     "dilol", 
     "tac",
     "vir", 
@@ -74,7 +94,21 @@ export const suffixdata = [
     "feme",
     "rolol", 
     "phrend", 
-    "mil"
+    "mil",
+    "il",
+    "en",
+    "an",
+    "in",
+    "ol",
+    "el",
+    "im",
+    "al",
+    "an",
+    "yn",
+    "in",
+    "ac",
+    "ax",
+    "ex"
 ]
 
 

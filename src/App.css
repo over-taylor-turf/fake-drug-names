@@ -279,8 +279,8 @@ Secondary:
 
       .comparison-button {
         background-color: #E5BBC7;
-        border: 1px solid #3d3d3d;
-        color: #3d3d3d; 
+        border: 1px solid black;
+        color: black; 
         padding: 8px;
         border-radius: 25px;
         font-family: 'Manrope', sans-serif;
@@ -289,13 +289,13 @@ Secondary:
       }
 
       .comparison-text {
-        text-align: center;
+        text-align: left;
         font-family: 'Manrope', sans-serif;
         font-weight: 500;
         font-size: 1.25em;
         color: black; 
         margin: 5px;
-        background-color: rgb(61, 61, 61, 0.15);
+        background-color: rgb(255,255,255,0.5);
       }
 
       .drug-names {
@@ -310,4 +310,21 @@ Secondary:
         font-family: 'Manrope', sans-serif;
         font-weight: 500;
         font-size: 1.5em;
+      }
+
+      .real-product {
+        color: #17a381;
+        font-weight: 700;
+      }
+
+      .fake-product {
+        color: #b81f34;
+        font-weight: 700;
+      }
+
+      .optional-text {
+        padding: 5px;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 500;
+        font-size: 1.25em;
       }

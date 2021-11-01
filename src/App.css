@@ -304,3 +304,10 @@ Secondary:
         font-weight: 700;
         font-size: 2em;
       }
+
+      .versus {
+        text-align: center;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 500;
+        font-size: 1.5em;
+      }

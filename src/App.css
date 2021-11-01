@@ -257,8 +257,50 @@ Secondary:
 
 
 
-/* Comparison */
-.comparison {
-  margin: 10px;
-  text-align: center;
-}
+/* ! ! !      C O M P A R I S O N  S T Y L E S       ! ! ! */
+
+/* Image: Orange Background */
+      .comparison-title {
+        text-align: center;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 700;
+        font-size: 2em;
+        color: black; 
+      }
+
+      .orange-image {
+        background-image: url('yellowpills.jpg');
+        background-color: #F4E161;
+        height: 100vh;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover; 
+      }
+
+      .comparison-button {
+        background-color: #E5BBC7;
+        border: 1px solid #3d3d3d;
+        color: #3d3d3d; 
+        padding: 8px;
+        border-radius: 25px;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 700;
+        font-size: 1em;
+      }
+
+      .comparison-text {
+        text-align: center;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 500;
+        font-size: 1.25em;
+        color: black; 
+        margin: 5px;
+        background-color: rgb(61, 61, 61, 0.15);
+      }
+
+      .drug-names {
+        text-align: center;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 700;
+        font-size: 2em;
+      }

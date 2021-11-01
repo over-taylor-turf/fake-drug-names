@@ -41,7 +41,9 @@ export const prefixdata = [
     "ViTa",
     "Liquid Ri",
     "Liquid Met",
-    "Dr. Jones' Nu"
+    "Dr. Jones' Nu",
+    "Gyne",
+    "Zil"
 ]
 
 export const middledata = [
@@ -88,6 +90,7 @@ export const suffixdata = [
     "pine", 
     "lol",
     "rol", 
+    "rol for Fast-Acting Relief",
     "zole", 
     "tan", 
     "zartan",
@@ -103,6 +106,7 @@ export const suffixdata = [
     "rolol", 
     "phrend", 
     "mil",
+    "mil for Kids",
     "il",
     "en",
     "an",
@@ -111,6 +115,7 @@ export const suffixdata = [
     "el",
     "im",
     "al",
+    "al for Kidz",
     "an",
     "yn",
     "in",

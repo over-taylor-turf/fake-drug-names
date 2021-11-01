@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {prefixdata, middledata, suffixdata} from './dataset';
 import sideeffects from './sideeffects';
 
@@ -7,9 +7,9 @@ function MainPage() {
 
       // Random Number Variables
       const randomNumber100 = Math.floor(Math.random() * 99) + 1
-      const randomNumberPrefix = Math.floor(Math.random() * 19) + 1
-      const randomNumberMiddle = Math.floor(Math.random() * 19) + 1
-      const randomNumberSuffix = Math.floor(Math.random() * 19) + 1
+      const randomNumberPrefix = Math.floor(Math.random() * 33) + 1
+      const randomNumberMiddle = Math.floor(Math.random() * 32) + 1
+      const randomNumberSuffix = Math.floor(Math.random() * 35) + 1
       const randomNumberSideEffect1 = Math.floor(Math.random() * 70) + 1
       const randomNumberSideEffect2 = Math.floor(Math.random() * 70) + 1
       const randomNumberSideEffect3 = Math.floor(Math.random() * 70) + 1
@@ -33,12 +33,7 @@ function MainPage() {
           .then((response) => response.json())
           .then((results) => setDrugEffects(results.data[randomNumber100].title)) )
     
-      // Use Effect
-        // useEffect(() => {
-        //   makeAPICall();
-        //   }, [])
-      
-
+    
 
     return (
       <div className="blue-image">

@@ -6,6 +6,7 @@ import './App.css';
 import Title from './Title';
 import About from './About';
 import MainPage from './MainPage';
+import Comparison from './Comparison';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Route path='/about' exact component={About} />
 
         <Route path='/names' exact component={MainPage} />
+
+        <Route path='/compare' exact component={Comparison} />
       
         <Redirect to='/' />
 

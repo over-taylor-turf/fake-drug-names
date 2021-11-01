@@ -129,7 +129,7 @@ Secondary:
         font-weight: 600;
         text-align: left;
         margin-left: 20px; 
-        margin-bottom: 20px;
+        margin-bottom: 80px;
         color: #174e80;
         text-decoration: none;
         background-color: #C1DCE4;
@@ -141,6 +141,28 @@ Secondary:
       }
 
       .generate-a-name:hover {
+        background-color: #206DB1;
+        border: 1.5px solid #C1DCE4;
+        color: #C1DCE4;
+      }
+
+      .compare-names {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 600;
+        text-align: left;
+        margin-left: 20px; 
+        margin-bottom: 20px;
+        color: #174e80;
+        text-decoration: none;
+        background-color: #C1DCE4;
+        padding: 8px;
+        border-radius: 25px;
+        position: fixed;
+        bottom: 0;
+        border: 1.5px solid #206DB1;
+      }
+
+      .compare-names:hover {
         background-color: #206DB1;
         border: 1.5px solid #C1DCE4;
         color: #C1DCE4;
@@ -206,6 +228,12 @@ Secondary:
         left: 5%;
       }
 
+      .most-important-button:hover {
+        background-color: #F98B98; 
+        color: #FECECF;
+        border: 1px solid #FECECF;
+      }
+
 
 /* Text: Example Drug Facts */
       .drug-details {
@@ -226,3 +254,11 @@ Secondary:
       .drug-details h3 {
         padding: 10px;
       }
+
+
+
+/* Comparison */
+.comparison {
+  margin: 10px;
+  text-align: center;
+}

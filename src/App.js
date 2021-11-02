@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Redirect, Link, Switch } from "react-router-dom";
+import { Route, Redirect, Switch } from "react-router-dom";
 import './App.css';
 
 // Component Imports
@@ -7,6 +7,7 @@ import Title from './Title';
 import About from './About';
 import MainPage from './MainPage';
 import Comparison from './Comparison';
+import Creator from './Creator';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Route path='/names' exact component={MainPage} />
 
         <Route path='/compare' exact component={Comparison} />
+
+        <Route path='/creator' exact component={Creator} /> 
       
         <Redirect to='/' />
 

@@ -296,17 +296,16 @@ Secondary:
         border: 1px solid #F98B98;
         background-color: #FECECF; 
         color: #F98B98;
-        padding: 8px;
         border-radius: 25px;
         font-family: 'Manrope', sans-serif;
         font-weight: 700;
         font-size: 1.25em;
-        /* align-items: center; */
+        padding: 8px;
       }
 
       .button-container {
-        margin: 0;
-        /* align-self: center; */
+        display: flex;
+        justify-content: center;
       }
 
       .most-important-button:hover {
@@ -350,16 +349,16 @@ Secondary:
       }
 
       .yellow-image {
-        background-image: url('yellowpills.jpg');
-        background-color: #F4E161;
+        background-image: url('greypills.jpg');
+        background-color: #C2DAE6;
         height: 100vh;
-        background-position: left;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover; 
       }
 
       .comparison-button {
-        background-color: #E5BBC7;
+        background-color:#DEB6A3;
         border: 1px solid black;
         color: black; 
         padding: 8px;
@@ -367,6 +366,12 @@ Secondary:
         font-family: 'Manrope', sans-serif;
         font-weight: 700;
         font-size: 1em;
+
+      }
+
+      .comparison-container {
+        display: flex;
+        justify-content: center;
       }
 
       .comparison-text {
@@ -376,7 +381,6 @@ Secondary:
         font-size: 1.2em;
         color: black; 
         padding: 5px;
-        background-color:rgb(255, 252, 250, 0.75);
       }
 
       .drug-names {
@@ -385,6 +389,7 @@ Secondary:
         font-weight: 700;
         font-size: 2em;
         padding: 5px;
+        background-color:rgb(255, 252, 250, 0.80);
       }
 
       .versus {
@@ -392,15 +397,16 @@ Secondary:
         font-family: 'Manrope', sans-serif;
         font-weight: 500;
         font-size: 1.5em;
+        background-color:rgb(255, 252, 250, 0.80);
       }
 
       .real-product {
-        color: #17a381;
+        /* color: #17a381; */
         font-weight: 700;
       }
 
       .fake-product {
-        color: #b81f34;
+        /* color: #b81f34; */
         font-weight: 700;
       }
 

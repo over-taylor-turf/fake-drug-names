@@ -164,33 +164,66 @@ Again, I am only using the "name" key to access the brand names randomly.
 | Medical Disclaimer | Location: Disclaimer Page, the Medical Disclaimer component will render one of those long, blanket, medical disclaimer statements: 'may cause internal bleeding, night sweats, tears coming out your nose...' | 
 | Footer | Location: Disclaimer Page, the Footer component will render some blatant self promotion and external links to my LinkedIn, GitHub and Portfolio Site. | 
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| About | Medium | 3 hrs| TBD | TBD |
-| Image | Low | 3 hrs| TBD | TBD |
-| Random Name | High | 10 hrs| TBD | TBD |
-| Random Drug Facts | High | 3 hrs| TBD | TBD |
-| Medical Disclaimer | Low | 2 hrs| TBD | TBD |
-| Footer | Low | 2 hrs| TBD | TBD |
+| About | Medium | 3 hrs| 4 hrs | 
+| Images | Low | 3 hrs| 2 hrs |
+| Random Name | High | 10 hrs| 5 hrs |
+| Random Drug Facts | High | 3 hrs| 8 hrs | 
+| Medical Disclaimer (Side Effects) | Low | 2 hrs| 3 hrs | 
+| Footer | Low | 2 hrs| 2 hrs | 
+| Second API Call | Medium | 2 hrs| 6 hrs | 
+| Nav Bar | Low | 2 hrs| 6 hrs | 
 
 
 ## Additional Libraries ✅
 - Upslash: background images.
 - Font Awesome: pill-bottle nav bar icon. 
 
-## Code Snippet ❌
+## Code Snippet ✅
 
 Here is some code that I am proud of! 
 
+I am very proud of the way I created my own randomized drug names because... they sound real! Sometimes even I am tricked by them. My vision with the prefix, middle, and suffix data worked out exactly as I intended. The random number generators max number refers to how many options I have for each, and the word is put together by simple concatenation! 
+
 ```js
-//code goes here
+
+const randomNumberPrefix = Math.floor(Math.random() * 33) + 1
+const randomNumberMiddle = Math.floor(Math.random() * 32) + 1
+const randomNumberSuffix = Math.floor(Math.random() * 35) + 1
+
+const [drugName, setDrugName] = useState();
+
+setDrugName(prefixdata[randomNumberPrefix] + middledata[randomNumberMiddle] + suffixdata[randomNumberSuffix]);
+
 ```
 
 
-## Cite My Sources ❌
+## Cite My Sources ✅
 
 Here are some online resources that helped me be successful in my project! 
 
-```js
-//code goes here
+For my homepage, I wanted the font styling of my "medpramin" title very specific. I researched online as to how to stretch the text a little more than the original Google Font, known as MuseoModerno. This [StackOverflow Article](https://stackoverflow.com/questions/6351013/can-i-stretch-text-using-css) was helpful and I was able to edit it for my own text. 
+
+```css
+
+/* Title: "Medpramin" */
+      #title {
+        text-align: center;
+        font-size: 4.15em;
+        margin-top: 0;
+        padding-top: 10px;
+        color: #388A80;
+        font-family: 'MuseoModerno', cursive;
+        padding-bottom: 0px;
+        margin-bottom: 0px; 
+        -webkit-transform:scale(1,1.35); /* Safari and Chrome */
+          -moz-transform:scale(1,1.35); /* Firefox */
+          -ms-transform:scale(1,1.35); /* IE 9 */
+          -o-transform:scale(1,1.35); /* Opera */
+          transform:scale(1,1.35); /* W3C */
+        -webkit-text-stroke: 0.3px #165141;
+        -webkit-text-fill-color: #388A80;
+      }
+
 ```

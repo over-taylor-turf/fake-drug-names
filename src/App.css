@@ -16,6 +16,7 @@ Secondary:
   Tan: #DCAD79
 */
 
+/*  INTERNAL STYLE RESET */
 * {
   margin: 0;
   padding: 0;
@@ -516,3 +517,67 @@ Secondary:
         padding: 10px;
       }
 
+/*  ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! RESPONSIVE DESIGN BREAK POINT ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !*/
+  
+/* TABLET */
+
+@media only screen and (min-width: 768px) { }
+
+
+/*  ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! RESPONSIVE DESIGN BREAK POINT ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !*/
+
+/* DESKTOP */
+
+@media only screen and (min-width: 992px) { 
+
+/* ! ! !       T I T L E   P A G E   S T Y L E S       ! ! ! */
+
+                /* Title: "Medpramin" */
+                #title {
+                  font-size: 10em;
+                }
+
+
+                /* Text: "A Painless Prescription Drug Name Generator" */
+                #tagline {
+                  font-weight: 700;
+                  margin-left: 60px; 
+                  font-size: 3.5em;
+                  width: 30vw;
+                  letter-spacing: 2.5px;
+                }
+
+                /* Button: "Learn More" */
+                #learn-more {
+                  font-weight: 700;
+                  text-align: left;
+                  margin-left: 60px; 
+                  margin-bottom: 20px;
+                  padding: 12px;
+                  font-size: 1.75em;
+                }
+
+
+/* H A M B U R G E R  M E N U */
+  
+                .fa-prescription-bottle {
+                  position: fixed;
+                  margin: 20px 30px;
+                  padding: 10px;
+                  font-size: 4em;
+                }
+
+                .hamburger-menu p {
+                  margin: 2px;
+                  padding: 10px;
+                  font-size: 1.75em;
+                }
+
+                .hamburger-menu {
+                  right: 25px;
+                  bottom: 120px;
+                }
+
+
+
+}

@@ -6,10 +6,11 @@ function Creator() {
       <div className="orange-image">
           
         <img id='taylor' src='./tayloravatar.png' alt='a cartoon rendering of the author'/>
-
-        <p className="meet-the-mind">Meet the Mind behind <em>Medpramin</em></p>
+          <br/>
+        <p className="meet-the-mind">Meet the Mind behind <br/><span id="medpramin">medpramin</span></p>
+          <br/>
         <p className="bio">Taylor is a front-end web developer with a passion for responsive design and clear, clean code that fosters conversation, collaboration, and creativity. In a previous life, she was an educator. She holds a Master’s Degree in Applied Linguistics from Columbia University, and is deeply curious about language acquisition—whether it be a human or computer language!</p>
-
+          <br/>
         <div className="links">
 
         <p id="link1"><a  href="https://over-taylor-turf.github.io/"      

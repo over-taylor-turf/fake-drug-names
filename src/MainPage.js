@@ -38,10 +38,13 @@ function MainPage() {
 
     return (
       <div className="blue-image">
-        <p id="introducing"><em>Introducing...</em></p>
+        <br/><br/>
+        <p id="introducing">Introducing...</p>
+        <br/>
         <p className="random-drug-name">
             {drugName ? drugName : 'Medpramin'}
         </p>
+        <br/>
         <div className="button-container"><button className="most-important-button" onClick={() => {handleRandomDrugNames()}} >Generate Name</button></div>
 
         <div className="drug-details">

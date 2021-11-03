@@ -16,6 +16,16 @@ Secondary:
   Tan: #DCAD79
 */
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
 
 /* ! ! !       T I T L E   P A G E   S T Y L E S       ! ! ! */
 
@@ -50,7 +60,7 @@ Secondary:
         color: #F3F7F8;
         padding-top: 0px;
         margin-top: 0px; 
-        width: 35vw;
+        width: 40vw;
         letter-spacing: 2px;
       }
 
@@ -92,21 +102,21 @@ Secondary:
 /* H A M B U R G E R  M E N U */
   
       .fa-prescription-bottle {
-        color: #FEA959;
+        color: #F78740;
         background-color: white;
-        border: 2px solid #FEA959;
+        border: 2px solid #F78740;
         position: fixed;
         bottom: 0;
         right: 0;
         margin: 15px;
         padding: 5px;
-        font-size: 3em;
+        font-size: 2.5em;
         border-radius: 5px;
       }
 
       .fa-prescription-bottle:hover {
         color: white;
-        background-color: #FEA959; 
+        background-color: #F78740; 
         border: 2px solid white;
       }
 
@@ -119,21 +129,20 @@ Secondary:
         margin: 2px;
         padding: 5px;
         font-size: 1.15em;
-        color: #388A80;
+        color: #F78740;
         font-family: 'Manrope', sans-serif;
         font-weight: 700;
       }
 
       .hamburger-menu p:hover {
-        color: #FD3DC4;
+        color: #D18877;
       }
 
       .hamburger-menu {
-        /* Not sure what to here */
         position: fixed;
         right: 10px;
         bottom: 90px;
-        background-color: rgb(255, 252, 250, 0.75);
+        background-color: rgb(255, 252, 250, 0.85);
         border-radius: 10px;
       }
 
@@ -142,9 +151,9 @@ Secondary:
 
 /* ! ! !       A B O U T  P A G E   S T Y L E S       ! ! ! */
 
-/* Image: Pink Background */
+/* Image: Assorted Pills Background */
       .about-image {
-        background-image: url('assortedpills.jpg');
+        background-image: url('blankbottle.jpg');
         background-color: #F3F7F8;
         height: 100vh;
         background-position: center;
@@ -155,23 +164,40 @@ Secondary:
 /* Text: "Medpramin is a solutions-based... " */
       .about-text {
         font-family: 'Manrope', sans-serif;
-        font-weight: 700;
+        font-weight: 600;
         font-size: 1.35em;
         text-align: left;
-        color: #174e80;
-        margin: 0px 15px 15px 15px;
-        padding: 15px 5px 5px 5px;
-        background-color: rgb(193, 220, 228, 0.45);
-        border-radius: 15px;
+        color: #520300;
+        margin-top: 0;
+        padding: 20px;
+        background-color: rgb(255, 252, 250, 0.5);
       }
 
-      .about-text a {
-        color: #174e80;
+      .about-text2 {
+        text-align: center;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 700;
+        font-size: 1.25em;
+        vertical-align: middle;
+        position: sticky;
+        top: 47%;
+        color: #713C3C;
       }
 
-      .about-text a:hover {
-        color: #DCAD79;
+      .about-text3 {
+        text-align: center;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 700;
+        font-size: 1.75em;
+        vertical-align: middle;
+        position: sticky;
+        top: 52%;
+        color: #520300;
+        text-shadow: 2px 3px 3px rgba(0,0,0,0.32);
       }
+
+
+
 
 
 /* Button: "Generate a Name" */
@@ -244,7 +270,7 @@ Secondary:
         color: #FFFCFA;
         font-family: 'Manrope', sans-serif;
         font-weight: 500;
-        font-size: 1.2em;
+        font-size: 1.35em;
         margin: 0px 0px 0px 5px;
       }
 
@@ -255,7 +281,7 @@ Secondary:
         font-size: 2.75em;
         text-align: center;
         color: #F98B98;
-        background-color: rgb(255, 252, 250, 0.7);
+        background-color: rgb(255, 252, 250, 0.75);
       }
 
 /* Text: Randomized Drug Facts */
@@ -275,12 +301,12 @@ Secondary:
         font-family: 'Manrope', sans-serif;
         font-weight: 700;
         font-size: 1.25em;
+        /* align-items: center; */
       }
 
       .button-container {
         margin: 0;
-        position: absolute;
-        left: 5%;
+        /* align-self: center; */
       }
 
       .most-important-button:hover {
@@ -292,22 +318,22 @@ Secondary:
 
 /* Text: Example Drug Facts */
       .drug-details {
-        position: fixed;
-        top: 250px;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-top: 20px;
         color: #F98B98;
-        background-color: rgb(255, 252, 250, 0.7);
+        background-color: rgb(255, 252, 250, 0.75);
         height: 35vh;
         text-overflow: clip;
       }
 
       .drug-details p {
-        padding-left: 10px;
+        padding: 10px;
+        font-size: 1.15em;
       }
 
       .drug-details h3 {
-        padding: 10px;
+        padding-top: 20px;
+        padding-left: 10px;
+        font-size: 1.25em;
       }
 
 
@@ -347,10 +373,10 @@ Secondary:
         text-align: left;
         font-family: 'Manrope', sans-serif;
         font-weight: 500;
-        font-size: 1.25em;
+        font-size: 1.2em;
         color: black; 
-        margin: 5px;
-        background-color: rgb(255,255,255,0.5);
+        padding: 5px;
+        background-color:rgb(255, 252, 250, 0.75);
       }
 
       .drug-names {
@@ -358,6 +384,7 @@ Secondary:
         font-family: 'Manrope', sans-serif;
         font-weight: 700;
         font-size: 2em;
+        padding: 5px;
       }
 
       .versus {
@@ -391,7 +418,7 @@ Secondary:
         background-image: url('orangepills.jpg');
         background-color: #F4E161;
         height: 100vh;
-        background-position: center;
+        background-position: left;
         background-repeat: no-repeat;
         background-size: cover; 
       }
@@ -467,6 +494,11 @@ Secondary:
         text-align: center;
       }
 
+      #medpramin {
+        font-family: 'MuseoModerno', cursive;
+        font-size: 1.75em;
+      }
+
 /* Text: "Taylor is a front-end... " */
       .bio {
         font-family: 'Manrope', sans-serif;
@@ -474,7 +506,7 @@ Secondary:
         font-size: 1em;
         color: black; 
         text-align: left; 
-        background-color: rgb(255,255,255,0.5);
-        padding: 5px;
+        background-color: rgb(255,255,255,0.75);
+        padding: 10px;
       }
 

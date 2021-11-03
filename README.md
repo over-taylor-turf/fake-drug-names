@@ -7,23 +7,24 @@
 
 ## Project Description ✅
 
-For Project 2, I will be creating a ✨ *fake prescription drug name generator*. ✨
+For Project 2, I present a ✨ *fake prescription drug name generator*. ✨
 - Do you ever think to yourself, 'how did they come up with this truly terrible drug name?' when you're watching commercials in between your favorite episode of The Bachelorette?
 - Do you ever ask, 'is this an SNL sketch or is this cable TV?' when you hear promotions for Tridesivir, Hydrofam, or Butonial? 
 
 Well, my site will now take the, albeit very little, thinking out of giant drug corporations naming processes!
 
-Enter the *Prescription Drug Name Generator*. A website that will randomize a drug name for you based on my own unique data set alongside a medical API with randomized drug facts.
+Enter the *Medpramin*. A website that will randomize a drug name for you based on my own unique data set alongside a medical API with randomized drug facts. How did I come up with the name *Medpramin*? I generated it from my site! 
 
 [Reddit Inspiration](https://res.cloudinary.com/overturf/image/upload/v1635526902/Screen_Shot_2021-10-29_at_8.53.35_AM_jpkz54.png)
 
 
 ## API ✅
 
-I will be using a very strange API, that took me a very long time to find! 
-My API is called "[DailyMed](https://dailymed.nlm.nih.gov/dailymed/app-support-web-services.cfm)" and it returns specific drug fact data. I want to use it for randomized drug fact data in order to create some real-looking stats for my fake prescription drugs. DailyMed offers different details on prescription drugs, but the specific data I want is within this [object](https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json), when I make API calls, this is the information I am getting back. I am only using the data within the keys called "title" and I have set up a method to randomize which "title" data I get back. 
+I will be using two medical API's.
 
-I am only giving you a small example of all 100 objects, please use the link above to see the full data set. 
+The first API is called "[DailyMed](https://dailymed.nlm.nih.gov/dailymed/app-support-web-services.cfm)" and it returns specific drug fact data, for example: "PAROXETINE TABLET, FILM COATED, EXTENDED RELEASE [MODAVAR PHARMACEUTICALS LLC]". I want to use this data in order to create some real-looking stats for my fake prescription drugs. DailyMed offers different details on prescription drugs, but the specific data I want is within this [object](https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json), when I make API calls, this is the information I am getting back. I am only using the data within the keys called "title" and I have set up a method to randomize which "title" data I get back. 
+
+Here is a small sample of the data, please use the link above to see the full data set. 
 
 ```js
 {data: {
@@ -89,6 +90,40 @@ function App() {
 export default App;
 ```
 
+My second API returns real, drug brand names. This will be used in my "comparison game," where a user can guess between a randomly-generated *Medpramin* name and a real drug name. This API comes from the National Library of Medicine at the Lister Hill Center for Biomedical Communications, this API is referred to as [RxNav](https://lhncbc.nlm.nih.gov/RxNav/). RxNav returns much more data than DailyMed. In fact, I am randomly choosing a drug brand name out of over 5,000 pieces of data. 
+
+```js 
+const aBigRandomNumber = Math.floor(Math.random() * 5160) + 1 
+```
+
+My API Call: 
+```js
+  // API Call
+    const makeAPICall = () => (
+      fetch("https://rxnav.nlm.nih.gov/REST/allconcepts.json?tty=BN")
+      .then((response) => response.json())
+      .then((results) => setRealName(results.minConceptGroup.minConcept[aBigRandomNumber].name)) )
+```
+
+This API Call returns alphabetically-organized data that looks like: 
+```js
+{
+rxcui: "895761",
+name: "Actemra",
+tty: "BN"
+},
+{
+rxcui: "1040019",
+name: "Acthar",
+tty: "BN"
+},
+{
+rxcui: "637866",
+name: "ActHIB",
+tty: "BN"
+},
+```
+Again, I am only using the "name" key to access the brand names randomly. 
 
 ## Wireframes ✅
 
@@ -100,20 +135,23 @@ export default App;
 #### MVP Items
 - Find external API, make API call to collect desired data. ✅
 - Randomly generate specific data from DailyMed API. ✅
-- Create internal data set for name generator. 
-- Create random logic for creating full drug names. 
-- Display Name and Drug Facts with button functionality. 
-- Make routes between Homepage, Main Page and Disclaimer Page. 
-- Insert external links. 
-- CSS Mobile-First Basic Styling. 
+- Create internal data set for name generator. ✅
+- Create random logic for creating full drug names. ✅
+- Display Name and Drug Facts with button functionality. ✅
+- Make routes between Homepage, Main Page and Disclaimer Page. ✅
+- Insert external links. ✅
+- CSS Mobile-First Basic Styling. ✅
 
 #### PostMVP Items
 
-- CSS Styling to mimic a cheesy prescription drug brand. 
-- Generate an interactive pill bottle image for the Main page. 
-- Create content for About and Disclaimer components other than lorem ipsum. 
-- Use Unsplash for medical stock photos of pills, doctors, etc. 
-- Create animation for pill bottle image. 
+- CSS Styling to mimic a cheesy prescription drug brand. ❌ 
+    Note: I just can't do cheesy. it's against my soul. 
+- Generate an interactive pill bottle image for the Main page. ❌
+    Note: seems unimportant now. 
+- Create content for About and Disclaimer components other than lorem ipsum. ✅
+    Note: content was important to provide context to site idea, it's done but could be clearer.
+- Use Unsplash for medical stock photos of pills, doctors, etc. ✅
+    Note: used Unsplash images for all background images. 
 
 ## Components
 
@@ -137,8 +175,8 @@ export default App;
 
 
 ## Additional Libraries ✅
-- I would like to use a stock photo library, perhaps Upsplash, if I have time to generate some healthcare, medical, or pill-themed stock photos for my site. 
-
+- Upslash: background images.
+- Font Awesome: pill-bottle nav bar icon. 
 
 ## Code Snippet ❌
 

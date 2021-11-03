@@ -582,32 +582,79 @@ Secondary:
 /* ! ! !       A B O U T  P A G E   S T Y L E S       ! ! ! */
 
 
-/* Text: "Medpramin is a... " */
-.about-text {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 600;
-  font-size: 1.5em;
-  width: 30%;
-  margin-left: 20px;
-  border-radius: 20px;
-  background-color: rgb(255, 252, 250, 0.65);
+                /* Text: "Medpramin is a... " */
+                .about-text {
+                  font-family: 'Manrope', sans-serif;
+                  font-weight: 600;
+                  font-size: 1.5em;
+                  width: 30%;
+                  margin-left: 20px;
+                  border-radius: 20px;
+                  background-color: rgb(255, 252, 250, 0.65);
+                }
+
+                .about-text2 {
+                  text-align: center;
+                  font-family: 'Manrope', sans-serif;
+                  font-weight: 700;
+                  font-size: 2em;
+                  top: 40%;
+                }
+
+                .about-text3 {
+                  font-size: 4em;
+                  top: 46%;
+                  text-shadow: 4px 5px 6px rgba(0,0,0,0.32);
+                }
+
+
+/* ! ! !       M A I N  P A G E  S T Y L E S       ! ! ! */
+
+
+                /* Text: "Introducing..." */
+                #introducing {
+                  font-size: 2em;
+                  margin: 0px 0px 0px 15px;
+                }
+
+                /* Title: Randomized Drug Name */
+                .random-drug-name {
+                  font-size: 5em;
+                  background-color: rgb(255, 252, 250, 0.85);
+                }
+
+                /* Text: Randomized Drug Facts */
+                .random-drug-facts {
+                  font-family: 'Manrope', sans-serif;
+                  font-weight: 500;
+                }
+
+                /* Button: "Generate Name" */
+                .most-important-button {
+                  font-weight: 700;
+                  font-size: 2em;
+                  padding: 12px;
+                }
+
+/* Text: Example Drug Facts */
+.drug-details {
+  margin-top: 20px;
+  color: #F98B98;
+  background-color: rgb(255, 252, 250, 0.85);
+  height: 30vh;
+  text-overflow: clip;
 }
 
-.about-text2 {
-  text-align: center;
-  font-family: 'Manrope', sans-serif;
-  font-weight: 700;
+.drug-details p {
+  padding: 20px;
+  font-size: 1.85em;
+}
+
+.drug-details h3 {
+  padding-top: 20px;
+  padding-left: 20px;
   font-size: 2em;
-  top: 40%;
 }
-
-.about-text3 {
-  font-size: 4em;
-  top: 46%;
-  text-shadow: 4px 5px 6px rgba(0,0,0,0.32);
-}
-
-
-                
+          
 
 }

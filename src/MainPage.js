@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {prefixdata, middledata, suffixdata} from './dataset';
 import sideeffects from './sideeffects';
+import Menu from './Menu';
 
 function MainPage() {
 
@@ -46,6 +47,8 @@ function MainPage() {
         <div className="drug-details">
         <h3>Example Drug Details:</h3>
         <p className="random-drug-facts">{drugEffects ? `${drugName} is a ${drugEffects.toLowerCase('')} with side effects including ${sideeffects[randomNumberSideEffect1]}, ${sideeffects[randomNumberSideEffect2]}, ${sideeffects[randomNumberSideEffect3]}, and ${sideeffects[randomNumberSideEffect4]}.` : 'Welcome to Medpramin. We take the thinking out of the prescription drug naming process. Medpramin is a painless name generator for the newest prescription drugs hitting the market. Click the Generate button to find your next, big pharmaceutical hit!'}</p></div>
+      
+        <Menu />
       </div>
     );
   }

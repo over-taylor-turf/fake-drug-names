@@ -14,6 +14,7 @@ function About() {
           <div>
             <Menu />
           </div>
+          <p className="about-footer"><strong>Designed & Coded with humor by Taylor Overturf</strong><br/>Seattle, Washington | November, 2021</p>
       </div>
     );
   }

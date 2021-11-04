@@ -52,6 +52,7 @@ function MainPage() {
         <p className="random-drug-facts">{drugEffects ? `${drugName} is a ${drugEffects.toLowerCase('')} with side effects including ${sideeffects[randomNumberSideEffect1]}, ${sideeffects[randomNumberSideEffect2]}, ${sideeffects[randomNumberSideEffect3]}, and ${sideeffects[randomNumberSideEffect4]}.` : 'Welcome to Medpramin. We take the thinking out of the prescription drug naming process. Medpramin is a painless name generator for the newest prescription drugs hitting the market. Click the Generate button to find your next, big pharmaceutical hit!'}</p></div>
       
         <Menu />
+        <p className="mainpage-footer"><strong>Designed & Coded with humor by Taylor Overturf</strong><br/>Seattle, Washington | November, 2021</p>
       </div>
     );
   }

@@ -9,7 +9,7 @@ function Creator() {
           <br/>
         <p className="meet-the-mind">Meet the Mind behind <br/><span id="medpramin">medpramin</span></p>
           <br/>
-        <p className="bio">Taylor is a front-end web developer with a passion for responsive design and clear, clean code that fosters conversation, collaboration, and creativity. In a previous life, she was an educator. She holds a Master’s Degree in Applied Linguistics from Columbia University, and is deeply curious about language acquisition—whether it be a human or computer language!</p>
+        <p className="bio">Taylor is a front-end web developer who is a passionate about code that fosters conversation, collaboration, and creativity. In a previous life, she was an educator. She holds a Master’s Degree in Applied Linguistics from Columbia University, and is deeply curious about language acquisition—whether it be a human or computer language!<br/>
           <br/>
         <div className="links">
 
@@ -23,8 +23,13 @@ function Creator() {
             target="_blank" rel="noreferrer"><i className="fas fa-link"></i> GitHub</a></p>
 
         </div>
+        </p>
 
         <Menu />
+
+        <p className="creator-footer"><strong>Designed & Coded with humor by Taylor Overturf</strong><br/>Seattle, Washington | November, 2021</p>
+
+
       </div>
     );
   }

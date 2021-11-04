@@ -197,7 +197,17 @@ Secondary:
         text-shadow: 2px 3px 3px rgba(0,0,0,0.32);
       }
 
-
+      /* Footer */
+      .about-footer {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        font-size: 0.9em;
+        position: fixed;
+        width: 85%;
+        bottom: 15px;
+        color: #520300;        
+      }
 
 
 
@@ -335,6 +345,18 @@ Secondary:
         padding-left: 10px;
         font-size: 1.25em;
       }
+      
+      /* Footer */
+      .mainpage-footer {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        font-size: 0.9em;
+        position: fixed;
+        width: 85%;
+        bottom: 15px;
+        color: #FFFCFA;  
+      }
 
 
 
@@ -459,10 +481,7 @@ Secondary:
       }
 
       #link1 a:hover {
-        color: #A4371A; 
-        background-color: rgb(255,255,255,0.5);
-        padding: 8px;
-        border-radius: 25px;
+        color: #FEB267; 
       }
 
       #link2 {
@@ -471,10 +490,7 @@ Secondary:
       }
 
       #link2 a:hover {
-        color: #A4371A; 
-        background-color: rgb(255,255,255,0.5);
-        padding: 8px;
-        border-radius: 25px;
+        color: #FEB267; 
       }
 
       #link3 {
@@ -483,10 +499,7 @@ Secondary:
       }
 
       #link3 a:hover {
-        color: #A4371A; 
-        background-color: rgb(255,255,255,0.5);
-        padding: 8px;
-        border-radius: 25px;
+        color: #FEB267; 
       }
 
 /* Cartoon Image of Taylor */
@@ -522,6 +535,18 @@ Secondary:
         text-align: left; 
         background-color: rgb(255,255,255,0.75);
         padding: 10px;
+      }
+      
+      /* Footer */
+      .creator-footer {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        font-size: 0.9em;
+        position: fixed;
+        width: 85%;
+        bottom: 15px;
+        color: black;  
       }
 
 /*  ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! RESPONSIVE DESIGN BREAK POINT ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !*/
@@ -614,6 +639,14 @@ Secondary:
                   text-shadow: 4px 5px 6px rgba(0,0,0,0.32);
                 }
 
+                /* Footer */
+                .about-footer {
+                  font-size: 1.25em;
+                  position: fixed;
+                  width: 100%;     
+                }
+
+
 
 /* ! ! !       M A I N  P A G E  S T Y L E S       ! ! ! */
 
@@ -662,6 +695,13 @@ Secondary:
                   padding-left: 20px;
                   font-size: 2em;
                 }
+
+                /* Footer */
+                .mainpage-footer {
+                  font-size: 1.25em;
+                  width: 100%;
+                  color: #FFFCFA;  
+                }
                     
 
 /* ! ! !      C O M P A R I S O N  S T Y L E S       ! ! ! */
@@ -708,32 +748,6 @@ Secondary:
 
     /* ! ! !      C R E A T O R   S T Y L E S       ! ! ! */
 
-              .links a {
-                position: fixed;
-                bottom: 25px;
-                font-size: 2em;
-              }
-
-              #link1 {
-                grid-row: 1 / 2;
-                grid-column: 1 / 2; 
-                text-align: right;
-              }
-
-
-              #link2 {
-                grid-row: 1 / 2;
-                grid-column: 2 / 3; 
-                text-align: center;
-              }
-
-
-              #link3 {
-                grid-row: 1 / 2;
-                grid-column: 3 / 4; 
-                text-align: left;
-              }
-
 
               /* Cartoon Image of Taylor */
 
@@ -759,6 +773,12 @@ Secondary:
                 padding: 20px;
                 margin: 0 60px;
                 border-radius: 25px;
+              }
+
+              /* Footer */
+              .creator-footer {
+                font-size: 1.25em;
+                width: 100%;
               }
 
     }

@@ -5,7 +5,8 @@ function Creator() {
     return (
       <div className="orange-image">
           
-        <img id='taylor' src='./tayloravatar.png' alt='a cartoon rendering of the author'/>
+        <div className="wrapper">
+        <img id='taylor' src='./tayloravatar.png' alt='a cartoon rendering of the author'/></div>
           <br/>
         <p className="meet-the-mind">Meet the Mind behind <br/><span id="medpramin">medpramin</span></p>
           <br/>

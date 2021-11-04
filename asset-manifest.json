@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/fake-drug-names/static/css/main.2035f2f7.chunk.css",
-    "main.js": "/fake-drug-names/static/js/main.99785053.chunk.js",
-    "main.js.map": "/fake-drug-names/static/js/main.99785053.chunk.js.map",
+    "main.css": "/fake-drug-names/static/css/main.998cce77.chunk.css",
+    "main.js": "/fake-drug-names/static/js/main.ab3e420e.chunk.js",
+    "main.js.map": "/fake-drug-names/static/js/main.ab3e420e.chunk.js.map",
     "runtime-main.js": "/fake-drug-names/static/js/runtime-main.1866e059.js",
     "runtime-main.js.map": "/fake-drug-names/static/js/runtime-main.1866e059.js.map",
     "static/js/2.5cb3077a.chunk.js": "/fake-drug-names/static/js/2.5cb3077a.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.14b1500d.chunk.js": "/fake-drug-names/static/js/3.14b1500d.chunk.js",
     "static/js/3.14b1500d.chunk.js.map": "/fake-drug-names/static/js/3.14b1500d.chunk.js.map",
     "index.html": "/fake-drug-names/index.html",
-    "static/css/main.2035f2f7.chunk.css.map": "/fake-drug-names/static/css/main.2035f2f7.chunk.css.map",
+    "static/css/main.998cce77.chunk.css.map": "/fake-drug-names/static/css/main.998cce77.chunk.css.map",
     "static/js/2.5cb3077a.chunk.js.LICENSE.txt": "/fake-drug-names/static/js/2.5cb3077a.chunk.js.LICENSE.txt",
     "static/media/App.css": "/fake-drug-names/static/media/pinkpills.344e90ab.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.1866e059.js",
     "static/js/2.5cb3077a.chunk.js",
-    "static/css/main.2035f2f7.chunk.css",
-    "static/js/main.99785053.chunk.js"
+    "static/css/main.998cce77.chunk.css",
+    "static/js/main.ab3e420e.chunk.js"
   ]
 }

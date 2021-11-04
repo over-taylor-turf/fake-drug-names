@@ -573,7 +573,234 @@ Secondary:
   
 /* TABLET */
 
-@media only screen and (min-width: 768px) { }
+@media only screen and (min-width: 768px) { 
+
+                /* Title: "Medpramin" */
+                #title {
+                  font-size: 8em;
+                }
+                
+                /* Text: "A Painless Prescription Drug Name Generator" */
+                #tagline {
+                  font-weight: 600;
+                  margin-left: 70px; 
+                  font-size: 3em;
+                  letter-spacing: 2px;
+                }
+
+                /* Button: "Learn More" */
+                #learn-more {
+                  font-weight: 700;
+                  text-align: left;
+                  margin-left: 60px; 
+                  margin-bottom: 20px;
+                  padding: 12px;
+                  font-size: 1.75em;
+                }
+
+                /* H A M B U R G E R  M E N U */
+  
+                .fa-prescription-bottle {
+                  position: fixed;
+                  margin: 20px 30px;
+                  padding: 10px;
+                  font-size: 3.5em;
+                }
+
+                .hamburger-menu p {
+                  margin: 2px;
+                  padding: 7.5px;
+                  font-size: 1.65em;
+                }
+
+                .hamburger-menu {
+                  right: 20px;
+                  bottom: 110px;
+                }
+
+                /* Text: "Medpramin is a... " */
+                .about-text {
+                  font-family: 'Manrope', sans-serif;
+                  font-weight: 600;
+                  font-size: 1.75em;
+                }
+
+                .about-text2 {
+                  text-align: center;
+                  font-family: 'Manrope', sans-serif;
+                  font-weight: 700;
+                  font-size: 2.5em;
+                  top: 42%;
+                }
+
+                .about-text3 {
+                  font-size: 4.5em;
+                  top: 48%;
+                  text-shadow: 4px 5px 6px rgba(0,0,0,0.32);
+                }
+
+                /* Footer */
+                .about-footer {
+                  font-size: 1.5em;
+                  position: fixed;
+                  width: 100%;     
+                }
+
+                /* ! ! !       M A I N  P A G E  S T Y L E S       ! ! ! */
+
+
+                /* Text: "Introducing..." */
+                #introducing {
+                  font-size: 2em;
+                  margin: 0px 0px 0px 15px;
+                }
+
+                /* Title: Randomized Drug Name */
+                .random-drug-name {
+                  font-size: 4em;
+                  background-color: rgb(255, 252, 250, 0.8);
+                }
+
+                /* Text: Randomized Drug Facts */
+                .random-drug-facts {
+                  font-family: 'Manrope', sans-serif;
+                  font-weight: 500;
+                }
+
+                /* Button: "Generate Name" */
+                .most-important-button {
+                  font-weight: 700;
+                  font-size: 1.75em;
+                  padding: 10px;
+                }
+
+                /* Text: Example Drug Facts */
+                .drug-details {
+                  margin-top: 20px;
+                  color: #F98B98;
+                  background-color: rgb(255, 252, 250, 0.8);
+                  height: 35vh;
+                  text-overflow: clip;
+                }
+
+                .drug-details p {
+                  padding-left: 50px;
+                  padding-right: 50px;
+                  font-size: 1.75em;
+                }
+
+                .drug-details h3 {
+                  padding-top: 20px;
+                  padding-bottom: 20px;
+                  padding-left: 50px;
+                  font-size: 2em;
+                }
+
+                /* Footer */
+                .mainpage-footer {
+                  font-size: 1.25em;
+                  width: 100%;
+                  color: #FFFCFA;  
+                }
+
+/* ! ! !      C O M P A R I S O N  S T Y L E S       ! ! ! */
+
+                /* Image: Grey Background */
+                .comparison-title {
+                  font-size: 3.25em;
+                  color: #DEB6A3;
+                  text-shadow: 2px 3px 3px rgba(0,0,0,0.32);
+                }
+
+                .comparison-button {
+                  border: 2px solid black;
+                  padding: 10px;
+                  font-size: 1.25em;
+                }
+
+                .comparison-button:hover {
+                  border: 2px solid #DEB6A3;
+                }
+
+                .comparison-text {
+                  text-align: center;
+                  font-size: 1.5em;
+                }
+
+                .drug-names {
+                  font-size: 3em;
+                  padding: 10px;
+                }
+
+                .versus {
+                  font-weight: 500;
+                  font-size: 2em;
+                }
+
+                .optional-text {
+                  font-size: 1.75em;
+                  text-align: left;
+                  position: fixed;
+                  bottom: 20px;
+                  margin-left: 10px;
+                  width: 85%;
+                }
+
+                .counter {
+                  position: fixed;
+                  top: 20px;
+                  right: 20px;
+                  text-align: center;
+                  padding: 12px; 
+                  font-size: 1.5em;
+                }
+          
+                .trophy {
+                  padding-right: 10px;
+                }
+
+    /* ! ! !      C R E A T O R   S T Y L E S       ! ! ! */
+
+
+              /* Cartoon Image of Taylor */
+
+              #taylor {
+                width: 200px;
+              }
+
+              /* Title: "Meet the Mind behind Medpramin" */
+
+              .meet-the-mind {
+                font-size: 2em;
+              }
+
+              .links a {
+                text-decoration: none;
+                color: black;
+                font-family: 'Manrope', sans-serif;
+                font-weight: 600;
+                font-size: 1em;
+              }
+
+              #medpramin {
+                font-size: 1.75em;
+                text-shadow: 2px 3px 3px rgba(0,0,0,0.4);
+              }
+
+              /* Text: "Taylor is a front-end... " */
+              .bio {
+                font-size: 1.25em;
+                background-color: rgb(255, 252, 250, 0.85);
+                padding: 20px;
+              }
+
+              /* Footer */
+              .creator-footer {
+                font-size: 1.25em;
+                width: 100%;
+              }
+
+}
 
 
 /*  ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! RESPONSIVE DESIGN BREAK POINT ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !*/
@@ -629,6 +856,8 @@ Secondary:
                   right: 25px;
                   bottom: 120px;
                 }
+
+                
 
 
 /* ! ! !       A B O U T  P A G E   S T Y L E S       ! ! ! */
@@ -701,7 +930,7 @@ Secondary:
                   margin-top: 20px;
                   color: #F98B98;
                   background-color: rgb(255, 252, 250, 0.85);
-                  height: 30vh;
+                  height: 38vh;
                   text-overflow: clip;
                 }
 
@@ -821,12 +1050,12 @@ Secondary:
                 padding: 20px;
                 margin: 0 60px;
                 border-radius: 25px;
-                width: 75%;
+                width: 70%;
               }
 
               /* Footer */
               .creator-footer {
-                font-size: 1.25em;
+                font-size: 1.5em;
                 width: 100%;
               }
 

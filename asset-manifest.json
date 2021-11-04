@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/fake-drug-names/static/css/main.ff600812.chunk.css",
-    "main.js": "/fake-drug-names/static/js/main.dbd1fcf1.chunk.js",
-    "main.js.map": "/fake-drug-names/static/js/main.dbd1fcf1.chunk.js.map",
-    "runtime-main.js": "/fake-drug-names/static/js/runtime-main.1866e059.js",
-    "runtime-main.js.map": "/fake-drug-names/static/js/runtime-main.1866e059.js.map",
-    "static/js/2.5cb3077a.chunk.js": "/fake-drug-names/static/js/2.5cb3077a.chunk.js",
-    "static/js/2.5cb3077a.chunk.js.map": "/fake-drug-names/static/js/2.5cb3077a.chunk.js.map",
-    "static/js/3.14b1500d.chunk.js": "/fake-drug-names/static/js/3.14b1500d.chunk.js",
-    "static/js/3.14b1500d.chunk.js.map": "/fake-drug-names/static/js/3.14b1500d.chunk.js.map",
+    "main.css": "/fake-drug-names/static/css/main.34dc4942.chunk.css",
+    "main.js": "/fake-drug-names/static/js/main.34277762.chunk.js",
+    "main.js.map": "/fake-drug-names/static/js/main.34277762.chunk.js.map",
+    "runtime-main.js": "/fake-drug-names/static/js/runtime-main.b6698845.js",
+    "runtime-main.js.map": "/fake-drug-names/static/js/runtime-main.b6698845.js.map",
+    "static/js/2.a524194f.chunk.js": "/fake-drug-names/static/js/2.a524194f.chunk.js",
+    "static/js/2.a524194f.chunk.js.map": "/fake-drug-names/static/js/2.a524194f.chunk.js.map",
+    "static/js/3.9a923c4c.chunk.js": "/fake-drug-names/static/js/3.9a923c4c.chunk.js",
+    "static/js/3.9a923c4c.chunk.js.map": "/fake-drug-names/static/js/3.9a923c4c.chunk.js.map",
     "index.html": "/fake-drug-names/index.html",
-    "static/css/main.ff600812.chunk.css.map": "/fake-drug-names/static/css/main.ff600812.chunk.css.map",
-    "static/js/2.5cb3077a.chunk.js.LICENSE.txt": "/fake-drug-names/static/js/2.5cb3077a.chunk.js.LICENSE.txt",
+    "static/css/main.34dc4942.chunk.css.map": "/fake-drug-names/static/css/main.34dc4942.chunk.css.map",
+    "static/js/2.a524194f.chunk.js.LICENSE.txt": "/fake-drug-names/static/js/2.a524194f.chunk.js.LICENSE.txt",
     "static/media/App.css": "/fake-drug-names/static/media/pinkpills.344e90ab.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1866e059.js",
-    "static/js/2.5cb3077a.chunk.js",
-    "static/css/main.ff600812.chunk.css",
-    "static/js/main.dbd1fcf1.chunk.js"
+    "static/js/runtime-main.b6698845.js",
+    "static/js/2.a524194f.chunk.js",
+    "static/css/main.34dc4942.chunk.css",
+    "static/js/main.34277762.chunk.js"
   ]
 }

@@ -2,8 +2,8 @@
 
 ## Project Links
 
-- GitHub Repo: [Fake Drug Names](https://git.generalassemb.ly/tayloroverturf/fake-drug-names)🔗
-- Deployed Link: [Medpramin](over-taylor-turf.github.io/fake-drug-names/)🔗
+- GitHub Repo: [Fake Drug Names](https://git.generalassemb.ly/tayloroverturf/fake-drug-names)
+- Deployed Link: [Medpramin](over-taylor-turf.github.io/fake-drug-names/)
 
 ## Project Description
 
@@ -15,8 +15,6 @@ Well, my site will now take the, albeit very little, thinking out of big pharma'
 
 **Enter the *Medpramin*. A website that will randomize a drug name for you based on my own unique data set alongside a medical API with randomized drug facts.** How did I come up with the name *Medpramin*? I generated it from my site! 
 
-[Reddit Inspiration](https://res.cloudinary.com/overturf/image/upload/v1635526902/Screen_Shot_2021-10-29_at_8.53.35_AM_jpkz54.png)
-
 
 ## API
 
@@ -24,7 +22,7 @@ I will be using two medical API's: *DailyMed* and *RxNav*.
 
 ### DailyMed
 
-The first API is called "[DailyMed](https://dailymed.nlm.nih.gov/dailymed/app-support-web-services.cfm)" and it returns specific drug fact data, for example: "PAROXETINE TABLET, FILM COATED, EXTENDED RELEASE [MODAVAR PHARMACEUTICALS LLC]". I use this data in order to create some real-looking stats for my fake prescription drugs. 
+The first API is called [DailyMed](https://dailymed.nlm.nih.gov/dailymed/app-support-web-services.cfm) and it returns specific drug fact data, for example: "PAROXETINE TABLET, FILM COATED, EXTENDED RELEASE [MODAVAR PHARMACEUTICALS LLC]". I use this data in order to create some real-looking stats for my fake prescription drugs. 
 
 DailyMed offers different details on prescription drugs, but the specific data I want is within this [object](https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json), when I make API calls, this is the information I am getting back. I am only using the data within the "title" keys and I have set up a method to randomize which "title" data I get back. 
 
@@ -52,6 +50,7 @@ setid: "54e2a32f-7f41-4ed7-926d-f6c9b0b225c6"
 },
 } }
 ```
+
 
 Here is my code demonstrating how I have made the API call to return the data I want to use: 
 ```js
@@ -88,6 +87,7 @@ function App() {
 export default App;
 ```
 
+
 ### RxNav
 
 My second API returns real, drug brand names. This will be used in my "comparison game," where a user can guess between a randomly-generated *Medpramin* name and a real drug name.
@@ -123,15 +123,15 @@ tty: "BN"
 ```
 Again, I am only using the "name" key to access the brand names randomly. 
 
+
 ## Wireframes
 
 #### React Architecture
-![React Architecture](https://res.cloudinary.com/overturf/image/upload/v1635527154/IMG_5029_srpb6c.heic)
-
 - [React Architecture](https://res.cloudinary.com/overturf/image/upload/v1635527154/IMG_5029_srpb6c.heic)
 - [Wireframe, Home Page](https://res.cloudinary.com/overturf/image/upload/v1635527182/IMG_5030_yjkcah.heic)
 - [Wireframe, Main Page](https://res.cloudinary.com/overturf/image/upload/v1635527215/IMG_5031_bmb1e9.heic)
 - [Wireframe, Disclaimer / Footer](https://res.cloudinary.com/overturf/image/upload/v1635527241/IMG_5032_io5ptz.heic)
+
 
 #### MVP Items
 - Find external API's, make API call to collect desired data. ✅
@@ -156,10 +156,11 @@ Again, I am only using the "name" key to access the brand names randomly.
 - Use Unsplash for medical stock photos of pills, doctors, etc. ✅
    *Note: used Unsplash images for all background images.*
 
+
 ## Components
 
 | Component | Description | 
-| --- | :---: |  
+| --- | --- |  
 | About | Location: Homepage, the About component will render the 'about' explanation and homepage title. | 
 | Image | Location: Main Page, the Image component will render an image, hopefully interactive, of a pill bottle. | 
 | Random Name | Location: Main Page, the Random Name component will render a random drug name based on a data set I create. It will use an internal dataset on another .js file. | 
@@ -168,7 +169,7 @@ Again, I am only using the "name" key to access the brand names randomly.
 | Footer | Location: Disclaimer Page, the Footer component will render some blatant self promotion and external links to my LinkedIn, GitHub and Portfolio Site. | 
 
 | Component | Priority | Estimated Time | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
+| --- | :---: |  :---: | :---: |
 | About | Medium | 3 hrs| 4 hrs | 
 | Images | Low | 3 hrs| 2 hrs |
 | Random Name | High | 10 hrs| 5 hrs |
@@ -180,14 +181,13 @@ Again, I am only using the "name" key to access the brand names randomly.
 
 
 ## Additional Libraries 
-- Unsplash: background images.
-- Font Awesome: pill-bottle nav bar icon. 
+- **Unsplash**: used for all the background images.
+- **Font Awesome**: pill bottle icon used for the hamburger nav bar. 
+
 
 ## Code Snippet 
 
-Here is some code that I am proud of! 
-
-I am very proud of the way I created my own randomized drug names because... they sound real! Sometimes even I am tricked by them. My vision with the prefix, middle, and suffix data worked out exactly as I intended. The random number generators max number refers to how many options I have for each, and the word is put together by simple concatenation! 
+I am proud of the way I created my own randomized drug names because... they sound real! Sometimes even I am tricked by them. My vision with the prefix, middle, and suffix data worked out exactly as I intended. The random number generators max number refers to how many options I have for each, and the word is put together by simple concatenation! 
 
 ```js
 
@@ -204,9 +204,7 @@ setDrugName(prefixdata[randomNumberPrefix] + middledata[randomNumberMiddle] + su
 
 ## Citations
 
-Here are some online resources that helped me be successful in my project! 
-
-For my homepage, I wanted the font styling of my "medpramin" title to be very specific. I researched online as to how to stretch the text a little more than the original Google Font, known as MuseoModerno. This [StackOverflow Article](https://stackoverflow.com/questions/6351013/can-i-stretch-text-using-css) was helpful and I was able to edit it for my own text. I also did a small border line (`text-stroke`) around the letters.
+Here is an online resources that helped me be successful in my project. For my homepage, I wanted the font styling of my "medpramin" title to be very specific. I researched online as to how to stretch the text a little more than the original Google Font, known as MuseoModerno. This [StackOverflow Article](https://stackoverflow.com/questions/6351013/can-i-stretch-text-using-css) was helpful and I was able to edit it for my own text. I also did a small border line (`text-stroke`) around the letters.
 
 ```css
 
@@ -230,3 +228,5 @@ For my homepage, I wanted the font styling of my "medpramin" title to be very sp
       }
 
 ```
+
+##### Please visit [Medpramin](over-taylor-turf.github.io/fake-drug-names/)! 

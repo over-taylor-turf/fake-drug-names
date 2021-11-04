@@ -148,13 +148,13 @@ Again, I am only using the "name" key to access the brand names randomly.
 
 #### PostMVP Items
 - CSS Styling to mimic a cheesy prescription drug brand. ❌ 
-    *Update: I just can't do cheesy. it's against my soul.* 
+  - *Update: I just can't do cheesy. it's against my soul.* 
 - Generate an interactive pill bottle image for the Main page. ❌
-    *Update: seems unimportant now.* 
+  - *Update: seems unimportant now.* 
 - Create content for About and Disclaimer components other than lorem ipsum. ✅
-    *Note: content was important to provide context to site idea, it's done but could be clearer, will continue to refine, especially the directions on the Comparison Game page.*
+  - *Note: content was important to provide context to site idea, it's done but could be clearer, will continue to refine, especially the directions on the Comparison Game page.*
 - Use Unsplash for medical stock photos of pills, doctors, etc. ✅
-   *Note: used Unsplash images for all background images.*
+   - *Note: used Unsplash images for all background images.*
 
 
 ## Components

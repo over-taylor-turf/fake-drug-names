@@ -382,7 +382,7 @@ Secondary:
 
       .comparison-button {
         background-color:#DEB6A3;
-        border: 1px solid black;
+        border: 2px solid black;
         color: black; 
         padding: 8px;
         border-radius: 25px;
@@ -392,6 +392,23 @@ Secondary:
 
       }
 
+      .counter {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        text-align: center;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 900;
+        padding: 5px; 
+        background-color: #ffd7c4;
+        border-radius: 5px;
+        border: 2px solid black;
+        font-size: 1em;
+      }
+
+      .trophy {
+        padding-right: 10px;
+      }
 
       .comparison-button:hover {
         color: #DEB6A3;
@@ -747,6 +764,19 @@ Secondary:
                   bottom: 20px;
                   margin-left: 10px;
                   width: 85%;
+                }
+
+                .counter {
+                  position: fixed;
+                  top: 20px;
+                  right: 20px;
+                  text-align: center;
+                  padding: 12px; 
+                  font-size: 2em;
+                }
+          
+                .trophy {
+                  padding-right: 15px;
                 }
 
     /* ! ! !      C R E A T O R   S T Y L E S       ! ! ! */

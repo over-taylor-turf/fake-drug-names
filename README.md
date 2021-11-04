@@ -1,30 +1,34 @@
-# Taylor's Project Overview 👏
+# Project Overview 👏
 
-## Project Links 
+## Project Links
 
-- [GitHub Repo: Fake Drug Names](https://git.generalassemb.ly/tayloroverturf/fake-drug-names)
-- [TBD deployment link]() ❌
+- GitHub Repo: [Fake Drug Names](https://git.generalassemb.ly/tayloroverturf/fake-drug-names)🔗
+- Deployed Link: [Medpramin](over-taylor-turf.github.io/fake-drug-names/)🔗
 
-## Project Description ✅
+## Project Description
 
-For Project 2, I present a ✨ *fake prescription drug name generator*. ✨
-- Do you ever think to yourself, 'how did they come up with this truly terrible drug name?' when you're watching commercials in between your favorite episode of The Bachelorette?
-- Do you ever ask, 'is this an SNL sketch or is this cable TV?' when you hear promotions for Tridesivir, Hydrofam, or Butonial? 
+For this project, I present to you a ✨ *fake prescription drug name generator*. ✨
+- Do you ever think, 'how did they come up with this truly terrible drug name?' when you're watching commercials in between your favorite episode of The Bachelorette?
+- Do you ever ask, 'is this an SNL sketch or is this cable TV?' when you hear promotions for *Tridesivir*, *Hydrofam*, or *Butonial*? 
 
-Well, my site will now take the, albeit very little, thinking out of giant drug corporations naming processes!
+Well, my site will now take the, albeit very little, thinking out of big pharma's naming processes...
 
-Enter the *Medpramin*. A website that will randomize a drug name for you based on my own unique data set alongside a medical API with randomized drug facts. How did I come up with the name *Medpramin*? I generated it from my site! 
+**Enter the *Medpramin*. A website that will randomize a drug name for you based on my own unique data set alongside a medical API with randomized drug facts.** How did I come up with the name *Medpramin*? I generated it from my site! 
 
 [Reddit Inspiration](https://res.cloudinary.com/overturf/image/upload/v1635526902/Screen_Shot_2021-10-29_at_8.53.35_AM_jpkz54.png)
 
 
-## API ✅
+## API
 
-I will be using two medical API's.
+I will be using two medical API's: *DailyMed* and *RxNav*. 
 
-The first API is called "[DailyMed](https://dailymed.nlm.nih.gov/dailymed/app-support-web-services.cfm)" and it returns specific drug fact data, for example: "PAROXETINE TABLET, FILM COATED, EXTENDED RELEASE [MODAVAR PHARMACEUTICALS LLC]". I want to use this data in order to create some real-looking stats for my fake prescription drugs. DailyMed offers different details on prescription drugs, but the specific data I want is within this [object](https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json), when I make API calls, this is the information I am getting back. I am only using the data within the keys called "title" and I have set up a method to randomize which "title" data I get back. 
+### DailyMed
 
-Here is a small sample of the data, please use the link above to see the full data set. 
+The first API is called "[DailyMed](https://dailymed.nlm.nih.gov/dailymed/app-support-web-services.cfm)" and it returns specific drug fact data, for example: "PAROXETINE TABLET, FILM COATED, EXTENDED RELEASE [MODAVAR PHARMACEUTICALS LLC]". I use this data in order to create some real-looking stats for my fake prescription drugs. 
+
+DailyMed offers different details on prescription drugs, but the specific data I want is within this [object](https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json), when I make API calls, this is the information I am getting back. I am only using the data within the "title" keys and I have set up a method to randomize which "title" data I get back. 
+
+Below is a small sample of the data, please use the link above to see the full data set. 
 
 ```js
 {data: {
@@ -45,12 +49,6 @@ spl_version: 1,
 published_date: "Oct 28, 2021",
 title: "DOXORUBICIN HYDROCHLORIDE INJECTION, SUSPENSION, LIPOSOMAL [PADAGIS US LLC]",
 setid: "54e2a32f-7f41-4ed7-926d-f6c9b0b225c6"
-},
-{
-spl_version: 1,
-published_date: "Oct 28, 2021",
-title: "PAROXETINE TABLET, FILM COATED, EXTENDED RELEASE [MODAVAR PHARMACEUTICALS LLC]",
-setid: "555cfa31-3865-450f-b16b-2f4004af7a67"
 },
 } }
 ```
@@ -90,13 +88,13 @@ function App() {
 export default App;
 ```
 
-My second API returns real, drug brand names. This will be used in my "comparison game," where a user can guess between a randomly-generated *Medpramin* name and a real drug name. This API comes from the National Library of Medicine at the Lister Hill Center for Biomedical Communications, this API is referred to as [RxNav](https://lhncbc.nlm.nih.gov/RxNav/). RxNav returns much more data than DailyMed. In fact, I am randomly choosing a drug brand name out of over 5,000 pieces of data. 
+### RxNav
 
-```js 
-const aBigRandomNumber = Math.floor(Math.random() * 5160) + 1 
-```
+My second API returns real, drug brand names. This will be used in my "comparison game," where a user can guess between a randomly-generated *Medpramin* name and a real drug name.
 
-My API Call: 
+This API comes from the National Library of Medicine at the Lister Hill Center for Biomedical Communications, known as [RxNav](https://lhncbc.nlm.nih.gov/RxNav/). RxNav returns much more data than DailyMed. In fact, I am randomly choosing a drug brand name out of over 5,000 data objects. 
+
+Here is my code demonstrating how I have made the API call to RxNav: 
 ```js
   // API Call
     const makeAPICall = () => (
@@ -125,7 +123,10 @@ tty: "BN"
 ```
 Again, I am only using the "name" key to access the brand names randomly. 
 
-## Wireframes ✅
+## Wireframes
+
+#### React Architecture
+![React Architecture](https://res.cloudinary.com/overturf/image/upload/v1635527154/IMG_5029_srpb6c.heic)
 
 - [React Architecture](https://res.cloudinary.com/overturf/image/upload/v1635527154/IMG_5029_srpb6c.heic)
 - [Wireframe, Home Page](https://res.cloudinary.com/overturf/image/upload/v1635527182/IMG_5030_yjkcah.heic)
@@ -133,25 +134,27 @@ Again, I am only using the "name" key to access the brand names randomly.
 - [Wireframe, Disclaimer / Footer](https://res.cloudinary.com/overturf/image/upload/v1635527241/IMG_5032_io5ptz.heic)
 
 #### MVP Items
-- Find external API, make API call to collect desired data. ✅
+- Find external API's, make API call to collect desired data. ✅
 - Randomly generate specific data from DailyMed API. ✅
+- Randomly generate specific data from RxNav API. ✅
 - Create internal data set for name generator. ✅
+- Create internal data set for side effects. ✅
 - Create random logic for creating full drug names. ✅
 - Display Name and Drug Facts with button functionality. ✅
+- Comparison Name Game with a real drug name and a randomly-generated name. ✅
 - Make routes between Homepage, Main Page and Disclaimer Page. ✅
 - Insert external links. ✅
 - CSS Mobile-First Basic Styling. ✅
 
 #### PostMVP Items
-
 - CSS Styling to mimic a cheesy prescription drug brand. ❌ 
-    Note: I just can't do cheesy. it's against my soul. 
+    *Update: I just can't do cheesy. it's against my soul.* 
 - Generate an interactive pill bottle image for the Main page. ❌
-    Note: seems unimportant now. 
+    *Update: seems unimportant now.* 
 - Create content for About and Disclaimer components other than lorem ipsum. ✅
-    Note: content was important to provide context to site idea, it's done but could be clearer.
+    *Note: content was important to provide context to site idea, it's done but could be clearer, will continue to refine, especially the directions on the Comparison Game page.*
 - Use Unsplash for medical stock photos of pills, doctors, etc. ✅
-    Note: used Unsplash images for all background images. 
+   *Note: used Unsplash images for all background images.*
 
 ## Components
 
@@ -176,11 +179,11 @@ Again, I am only using the "name" key to access the brand names randomly.
 | Nav Bar | Low | 2 hrs| 6 hrs | 
 
 
-## Additional Libraries ✅
-- Upslash: background images.
+## Additional Libraries 
+- Unsplash: background images.
 - Font Awesome: pill-bottle nav bar icon. 
 
-## Code Snippet ✅
+## Code Snippet 
 
 Here is some code that I am proud of! 
 
@@ -199,11 +202,11 @@ setDrugName(prefixdata[randomNumberPrefix] + middledata[randomNumberMiddle] + su
 ```
 
 
-## Cite My Sources ✅
+## Citations
 
 Here are some online resources that helped me be successful in my project! 
 
-For my homepage, I wanted the font styling of my "medpramin" title very specific. I researched online as to how to stretch the text a little more than the original Google Font, known as MuseoModerno. This [StackOverflow Article](https://stackoverflow.com/questions/6351013/can-i-stretch-text-using-css) was helpful and I was able to edit it for my own text. 
+For my homepage, I wanted the font styling of my "medpramin" title to be very specific. I researched online as to how to stretch the text a little more than the original Google Font, known as MuseoModerno. This [StackOverflow Article](https://stackoverflow.com/questions/6351013/can-i-stretch-text-using-css) was helpful and I was able to edit it for my own text. I also did a small border line (`text-stroke`) around the letters.
 
 ```css
 

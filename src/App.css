@@ -441,10 +441,13 @@ Secondary:
       }
 
       .optional-text {
-        padding: 10px;
+        padding-left: 15px;
         font-family: 'Manrope', sans-serif;
         font-weight: 500;
         font-size: 1.15em;
+        position: fixed;
+        bottom: 10px; 
+        width: 80%;
       }
 
     /* ! ! !      C R E A T O R   S T Y L E S       ! ! ! */
@@ -741,7 +744,7 @@ Secondary:
                   font-size: 2em;
                   text-align: left;
                   position: fixed;
-                  bottom: 40px;
+                  bottom: 20px;
                   margin-left: 10px;
                   width: 85%;
                 }
@@ -752,7 +755,7 @@ Secondary:
               /* Cartoon Image of Taylor */
 
               #taylor {
-                width: 225px;
+                width: 250px;
               }
 
               /* Title: "Meet the Mind behind Medpramin" */

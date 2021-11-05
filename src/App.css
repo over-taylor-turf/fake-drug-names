@@ -181,7 +181,7 @@ Secondary:
         font-size: 1.25em;
         vertical-align: middle;
         position: sticky;
-        top: 47%;
+        top: 52%;
         color: #713C3C;
       }
 
@@ -192,7 +192,7 @@ Secondary:
         font-size: 1.75em;
         vertical-align: middle;
         position: sticky;
-        top: 52%;
+        top: 56%;
         color: #520300;
         text-shadow: 2px 3px 3px rgba(0,0,0,0.32);
       }
@@ -206,7 +206,9 @@ Secondary:
         position: fixed;
         width: 100%;
         bottom: 15px;
-        color: #520300;        
+        color: #520300;
+        text-align: left;  
+        padding-left: 10px;       
       }
 
 
@@ -355,7 +357,9 @@ Secondary:
         position: fixed;
         width: 100%;
         bottom: 15px;
-        color: #FFFCFA;  
+        color: #FFFCFA;
+        text-align: left;   
+        padding-left: 10px; 
       }
 
 
@@ -566,7 +570,9 @@ Secondary:
         position: fixed;
         width: 100%;
         bottom: 15px;
-        color: black;  
+        color: black;
+        text-align: left;  
+        padding-left: 10px; 
       }
 
 /*  ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! RESPONSIVE DESIGN BREAK POINT ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !*/
@@ -644,6 +650,8 @@ Secondary:
                   font-size: 1.5em;
                   position: fixed;
                   width: 100%;     
+                  text-align: center;
+                  padding-left: 0px;
                 }
 
                 /* ! ! !       M A I N  P A G E  S T Y L E S       ! ! ! */
@@ -701,6 +709,8 @@ Secondary:
                   font-size: 1.25em;
                   width: 100%;
                   color: #FFFCFA;  
+                  text-align: center;
+                  padding-left: 0px;
                 }
 
 /* ! ! !      C O M P A R I S O N  S T Y L E S       ! ! ! */
@@ -798,6 +808,8 @@ Secondary:
               .creator-footer {
                 font-size: 1.25em;
                 width: 100%;
+                text-align: center;
+                padding-left: 0px;
               }
 
 }

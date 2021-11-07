@@ -864,7 +864,7 @@ Secondary:
 
 /* H A M B U R G E R  M E N U */
   
-                .fa-prescription-bottle {
+                /* .fa-prescription-bottle {
                   position: fixed;
                   margin: 20px 30px;
                   padding: 10px;
@@ -879,7 +879,7 @@ Secondary:
                 .hamburger-menu {
                   right: 25px;
                   bottom: 120px;
-                }
+                } */
 
                 
 
@@ -903,19 +903,19 @@ Secondary:
                   text-align: center;
                   font-family: 'Manrope', sans-serif;
                   font-weight: 700;
-                  font-size: 2.75em;
+                  font-size: 2.5em;
                   top: 40%;
                 }
 
                 .about-text3 {
-                  font-size: 7vw;
+                  font-size: 5vw;
                   top: 46%;
                   text-shadow: 4px 5px 6px rgba(0,0,0,0.32);
                 }
 
                 /* Footer */
                 .about-footer {
-                  font-size: 1.5vw;
+                  font-size: 1.45vw;
                   position: fixed;
                   width: 100%;   
                   text-align: left;  
@@ -976,7 +976,7 @@ Secondary:
 
                 /* Footer */
                 .mainpage-footer {
-                  font-size: 1.5vw;
+                  font-size: 1.45vw;
                   width: 100%;
                   color: #FFFCFA;  
                 }
@@ -986,7 +986,7 @@ Secondary:
 
                 /* Image: Grey Background */
                 .comparison-title {
-                  font-size: 4vw;
+                  font-size: 3.75vw;
                   color: #DEB6A3;
                   text-shadow: 2px 3px 3px rgba(0,0,0,0.32);
                 }
@@ -1003,11 +1003,11 @@ Secondary:
 
                 .comparison-text {
                   text-align: center;
-                  font-size: 2vw;
+                  font-size: 1.65vw;
                 }
 
                 .drug-names {
-                  font-size: 5vw;
+                  font-size: 3.75vw;
                   padding: 10px;
                 }
 
@@ -1016,7 +1016,7 @@ Secondary:
                 }
 
                 .optional-text {
-                  font-size: 2vw;
+                  font-size: 1.5vw;
                   text-align: left;
                   position: fixed;
                   bottom: 20px;
@@ -1053,7 +1053,7 @@ Secondary:
               /* Title: "Meet the Mind behind Medpramin" */
 
               .meet-the-mind {
-                font-size: 2.5vw;
+                font-size: 2vw;
                 width: 65%;
               }
 
@@ -1062,17 +1062,17 @@ Secondary:
                 color: black;
                 font-family: 'Manrope', sans-serif;
                 font-weight: 700;
-                font-size: 2vw;
+                font-size: 1.45vw;
               }
 
               #medpramin {
-                font-size: 4vw;
+                font-size: 3.5vw;
                 text-shadow: 2px 3px 3px rgba(0,0,0,0.4);
               }
 
               /* Text: "Taylor is a front-end... " */
               .bio {
-                font-size: 1.75vw;
+                font-size: 1.65vw;
                 background-color: rgb(255, 252, 250, 0.85);
                 padding: 20px;
                 margin: 0 60px;

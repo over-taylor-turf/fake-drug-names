@@ -1003,11 +1003,11 @@ Secondary:
 
                 .comparison-text {
                   text-align: center;
-                  font-size: 1.65vw;
+                  font-size: 1.5vw;
                 }
 
                 .drug-names {
-                  font-size: 3.75vw;
+                  font-size: 3.5vw;
                   padding: 10px;
                 }
 
@@ -1043,18 +1043,18 @@ Secondary:
               /* Cartoon Image of Taylor */
 
               #taylor {
-                width: 225px;
+                width: 215px;
               }
 
               .wrapper {
-                width: 65%;
+                width: 70%;
               }
 
               /* Title: "Meet the Mind behind Medpramin" */
 
               .meet-the-mind {
                 font-size: 2vw;
-                width: 65%;
+                width: 70%;
               }
 
               .links a {
@@ -1072,12 +1072,12 @@ Secondary:
 
               /* Text: "Taylor is a front-end... " */
               .bio {
-                font-size: 1.65vw;
+                font-size: 1.5vw;
                 background-color: rgb(255, 252, 250, 0.85);
                 padding: 20px;
                 margin: 0 60px;
                 border-radius: 25px;
-                width: 60%;
+                width: 65%;
               }
 
               /* Footer */

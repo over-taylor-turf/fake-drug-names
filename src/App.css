@@ -188,7 +188,7 @@ Secondary:
         font-size: 4vw;
         vertical-align: middle;
         position: sticky;
-        top: 46%;
+        top: 50%;
         color: #713C3C;
       }
 
@@ -199,7 +199,7 @@ Secondary:
         font-size: 7vw;
         vertical-align: middle;
         position: sticky;
-        top: 52%;
+        top: 54%;
         color: #520300;
         text-shadow: 2px 3px 3px rgba(0,0,0,0.32);
       }
@@ -438,7 +438,7 @@ Secondary:
         text-align: left;
         font-family: 'Manrope', sans-serif;
         font-weight: 500;
-        font-size: 2.5vw;
+        font-size: 2.65vw;
         color: black; 
         padding: 5px;
       }

@@ -139,6 +139,11 @@ Secondary:
         color: #D18877;
       }
 
+      #icon {
+          height: 88px;
+          width: 72px;
+      }
+
       .hamburger-menu {
         position: fixed;
         right: 10px;
